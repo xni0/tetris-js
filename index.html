@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Gameboy</title>
+    <link rel="icon" type="image/png" href="img/icons8-tetris-60.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./tetris/style.css">
+</head>
+<body>
+
+<main class="container_main">
+    <header><img src="img/title_screen.jpg" alt="Tetris Title"></header>
+    
+    <div class="container__boards">
+        <div class="boards__container--big" id="boards__container--big"></div>
+        <div class="boards__container--rigth">
+            <span class="points">Score</span>
+            <div class="counter"></div>
+            <div class="boards__container--small"></div>
+            <div class="controls-move"><p> 🡰 🡲 🡳 Move</p></div>
+            <div class="controls-rotate"><p> 🡱 Rotate</p></div>
+        </div>
+    </div>
+    
+    <div class="container_boton">
+        <button class="button_responsive button--left">Izquierda</button>
+        <button class="button_responsive button--rotate">Rotar</button>
+        <button class="button_responsive button--rigth">Derecha</button>
+    </div>
+    <div class="container_boton">
+        <button class="button_responsive button--down">Abajo</button>
+    </div>
+</main>
+
+<script src="./tetris/script.js"></script>    
+</body>
+</html>
